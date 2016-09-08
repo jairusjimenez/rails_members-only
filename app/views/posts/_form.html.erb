@@ -1,0 +1,10 @@
+<%= form_for(@post) do |f| %>
+	<%= render 'shared/error_messages', object: @post %>
+	<%= f.label :title %>
+	<%= f.text_field :title, class: 'form-control' %>
+
+	<%= f.label :message %>
+	<%= f.text_field :message, class: 'form-control' %>
+
+	<%= f.submit 'Create post', class: 'btn btn-primary' %>
+<% end %>

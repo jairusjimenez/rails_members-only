@@ -1,0 +1,13 @@
+<ul>
+	<li><%= post.title %></li>
+	<li>
+		by: 
+		<% if logged_in?%>
+			<%= post.user.name%>
+		<% else %>
+			Secret
+		<% end %>
+		
+	</li>
+	<li><%= post.message %></li>
+</ul>
